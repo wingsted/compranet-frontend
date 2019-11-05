@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739F5DAB2371A57000FBA111 /* KeyboardObservingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DAA2371A57000FBA111 /* KeyboardObservingView.swift */; };
+		739F5DAD2371A58500FBA111 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DAC2371A58500FBA111 /* Keyboard.swift */; };
+		739F5DB02371A78A00FBA111 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DAF2371A78A00FBA111 /* SignInViewModel.swift */; };
+		739F5DB22371A79E00FBA111 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DB12371A79E00FBA111 /* Credentials.swift */; };
+		739F5DB52371A7BC00FBA111 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DB42371A7BC00FBA111 /* RootView.swift */; };
+		739F5DB82371A7C900FBA111 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DB72371A7C900FBA111 /* AppStore.swift */; };
+		739F5DBA2371AAA600FBA111 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DB92371AAA600FBA111 /* AppState.swift */; };
+		739F5DBE2371AB8D00FBA111 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DBD2371AB8D00FBA111 /* Dashboard.swift */; };
+		739F5DC02371ABF700FBA111 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DBF2371ABF700FBA111 /* NewsFeedView.swift */; };
+		739F5DC22371ABFF00FBA111 /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DC12371ABFF00FBA111 /* EmployeeListView.swift */; };
+		739F5DC42371AC0400FBA111 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DC32371AC0400FBA111 /* ProfileView.swift */; };
+		739F5DC62371ADCE00FBA111 /* NewsFeedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DC52371ADCE00FBA111 /* NewsFeedItemView.swift */; };
+		739F5DC92371B11900FBA111 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F5DC82371B11900FBA111 /* NewsItem.swift */; };
 		D417BC5723717F1C00A6147C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC5623717F1C00A6147C /* AppDelegate.swift */; };
 		D417BC5923717F1C00A6147C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC5823717F1C00A6147C /* SceneDelegate.swift */; };
-		D417BC5B23717F1C00A6147C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC5A23717F1C00A6147C /* ContentView.swift */; };
 		D417BC5D23717F1F00A6147C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417BC5C23717F1F00A6147C /* Assets.xcassets */; };
 		D417BC6023717F1F00A6147C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417BC5F23717F1F00A6147C /* Preview Assets.xcassets */; };
 		D417BC6323717F1F00A6147C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D417BC6123717F1F00A6147C /* LaunchScreen.storyboard */; };
@@ -17,10 +29,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		739F5DAA2371A57000FBA111 /* KeyboardObservingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObservingView.swift; sourceTree = "<group>"; };
+		739F5DAC2371A58500FBA111 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		739F5DAF2371A78A00FBA111 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		739F5DB12371A79E00FBA111 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		739F5DB42371A7BC00FBA111 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		739F5DB72371A7C900FBA111 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		739F5DB92371AAA600FBA111 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		739F5DBD2371AB8D00FBA111 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		739F5DBF2371ABF700FBA111 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
+		739F5DC12371ABFF00FBA111 /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		739F5DC32371AC0400FBA111 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		739F5DC52371ADCE00FBA111 /* NewsFeedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItemView.swift; sourceTree = "<group>"; };
+		739F5DC82371B11900FBA111 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		D417BC5323717F1C00A6147C /* compranet-frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compranet-frontend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D417BC5623717F1C00A6147C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D417BC5823717F1C00A6147C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D417BC5A23717F1C00A6147C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D417BC5C23717F1F00A6147C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D417BC5F23717F1F00A6147C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D417BC6223717F1F00A6147C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +63,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		739F5DA92371A56700FBA111 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DAA2371A57000FBA111 /* KeyboardObservingView.swift */,
+				739F5DAC2371A58500FBA111 /* Keyboard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		739F5DAE2371A78300FBA111 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DB12371A79E00FBA111 /* Credentials.swift */,
+				D417BC6A23717F6800A6147C /* SignInView.swift */,
+				739F5DAF2371A78A00FBA111 /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		739F5DB32371A7B500FBA111 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DB42371A7BC00FBA111 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		739F5DB62371A7BE00FBA111 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DB92371AAA600FBA111 /* AppState.swift */,
+				739F5DB72371A7C900FBA111 /* AppStore.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		739F5DBB2371AB7400FBA111 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D417BC5623717F1C00A6147C /* AppDelegate.swift */,
+				D417BC5823717F1C00A6147C /* SceneDelegate.swift */,
+				D417BC5C23717F1F00A6147C /* Assets.xcassets */,
+				D417BC6123717F1F00A6147C /* LaunchScreen.storyboard */,
+				D417BC6423717F1F00A6147C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		739F5DBC2371AB8100FBA111 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DBD2371AB8D00FBA111 /* Dashboard.swift */,
+				739F5DC12371ABFF00FBA111 /* EmployeeListView.swift */,
+				739F5DC32371AC0400FBA111 /* ProfileView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		739F5DC72371B10800FBA111 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				739F5DBF2371ABF700FBA111 /* NewsFeedView.swift */,
+				739F5DC52371ADCE00FBA111 /* NewsFeedItemView.swift */,
+				739F5DC82371B11900FBA111 /* NewsItem.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		D417BC4A23717F1C00A6147C = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +150,14 @@
 		D417BC5523717F1C00A6147C /* compranet-frontend */ = {
 			isa = PBXGroup;
 			children = (
-				D417BC6A23717F6800A6147C /* SignInView.swift */,
-				D417BC5623717F1C00A6147C /* AppDelegate.swift */,
-				D417BC5823717F1C00A6147C /* SceneDelegate.swift */,
-				D417BC5A23717F1C00A6147C /* ContentView.swift */,
-				D417BC5C23717F1F00A6147C /* Assets.xcassets */,
-				D417BC6123717F1F00A6147C /* LaunchScreen.storyboard */,
-				D417BC6423717F1F00A6147C /* Info.plist */,
+				739F5DBB2371AB7400FBA111 /* App */,
+				739F5DBC2371AB8100FBA111 /* Dashboard */,
+				739F5DA92371A56700FBA111 /* Helpers */,
+				739F5DC72371B10800FBA111 /* News */,
 				D417BC5E23717F1F00A6147C /* Preview Content */,
+				739F5DB32371A7B500FBA111 /* Root */,
+				739F5DAE2371A78300FBA111 /* SignIn */,
+				739F5DB62371A7BE00FBA111 /* State */,
 			);
 			path = "compranet-frontend";
 			sourceTree = "<group>";
@@ -150,9 +242,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D417BC5723717F1C00A6147C /* AppDelegate.swift in Sources */,
+				739F5DB82371A7C900FBA111 /* AppStore.swift in Sources */,
+				739F5DC22371ABFF00FBA111 /* EmployeeListView.swift in Sources */,
+				739F5DBE2371AB8D00FBA111 /* Dashboard.swift in Sources */,
+				739F5DC62371ADCE00FBA111 /* NewsFeedItemView.swift in Sources */,
+				739F5DC92371B11900FBA111 /* NewsItem.swift in Sources */,
+				739F5DB02371A78A00FBA111 /* SignInViewModel.swift in Sources */,
+				739F5DB22371A79E00FBA111 /* Credentials.swift in Sources */,
 				D417BC5923717F1C00A6147C /* SceneDelegate.swift in Sources */,
 				D417BC6B23717F6800A6147C /* SignInView.swift in Sources */,
-				D417BC5B23717F1C00A6147C /* ContentView.swift in Sources */,
+				739F5DBA2371AAA600FBA111 /* AppState.swift in Sources */,
+				739F5DB52371A7BC00FBA111 /* RootView.swift in Sources */,
+				739F5DC02371ABF700FBA111 /* NewsFeedView.swift in Sources */,
+				739F5DAB2371A57000FBA111 /* KeyboardObservingView.swift in Sources */,
+				739F5DC42371AC0400FBA111 /* ProfileView.swift in Sources */,
+				739F5DAD2371A58500FBA111 /* Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +396,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"compranet-frontend/Preview Content\"";
 				DEVELOPMENT_TEAM = D63Y5MTMZY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "compranet-frontend/Info.plist";
+				INFOPLIST_FILE = "compranet-frontend/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +416,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"compranet-frontend/Preview Content\"";
 				DEVELOPMENT_TEAM = D63Y5MTMZY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "compranet-frontend/Info.plist";
+				INFOPLIST_FILE = "compranet-frontend/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
