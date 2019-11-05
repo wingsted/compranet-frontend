@@ -13,6 +13,7 @@
 		D417BC5D23717F1F00A6147C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417BC5C23717F1F00A6147C /* Assets.xcassets */; };
 		D417BC6023717F1F00A6147C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417BC5F23717F1F00A6147C /* Preview Assets.xcassets */; };
 		D417BC6323717F1F00A6147C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D417BC6123717F1F00A6147C /* LaunchScreen.storyboard */; };
+		D417BC6B23717F6800A6147C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC6A23717F6800A6147C /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D417BC5F23717F1F00A6147C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D417BC6223717F1F00A6147C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D417BC6423717F1F00A6147C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D417BC6A23717F6800A6147C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D417BC5523717F1C00A6147C /* compranet-frontend */ = {
 			isa = PBXGroup;
 			children = (
+				D417BC6A23717F6800A6147C /* SignInView.swift */,
 				D417BC5623717F1C00A6147C /* AppDelegate.swift */,
 				D417BC5823717F1C00A6147C /* SceneDelegate.swift */,
 				D417BC5A23717F1C00A6147C /* ContentView.swift */,
@@ -148,6 +151,7 @@
 			files = (
 				D417BC5723717F1C00A6147C /* AppDelegate.swift in Sources */,
 				D417BC5923717F1C00A6147C /* SceneDelegate.swift in Sources */,
+				D417BC6B23717F6800A6147C /* SignInView.swift in Sources */,
 				D417BC5B23717F1C00A6147C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
