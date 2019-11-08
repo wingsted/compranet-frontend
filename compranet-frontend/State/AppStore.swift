@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 // FIXME: MOVE
-struct Employee: Codable {
+struct Employee: Codable, Identifiable {
     var id: UUID?
     var name: String
     var phoneNumber: String?

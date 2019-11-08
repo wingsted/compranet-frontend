@@ -16,7 +16,7 @@ struct Dashboard: View {
                     Image(systemName: "doc.plaintext")
                     Text("News")
                 }
-            EmployeeListView()
+          //  EmployeeListView()
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("Employees")
