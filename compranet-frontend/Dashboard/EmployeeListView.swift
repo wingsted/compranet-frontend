@@ -12,20 +12,17 @@ struct EmployeeListView: View {
     
     let employee: Employee
     
-    @State var name: String = ""
-    @State var phoneNumber: String = ""
-    //FIXME: @State for profile image and departmentID?
-    
     var body: some View {
         List {
             HStack {
                 VStack {
-            TextField("Name", text: $name)
-                .foregroundColor(.white)
-
-            TextField("Phone Number", text: $phoneNumber)
+                    Text(employee.name)
                     .foregroundColor(.white)
-
+                    
+                        .padding()
+                    
+                    Text(employee.phoneNumber!)
+                    .foregroundColor(.white)
                 }
             Image("harold-0")
             .resizable()
@@ -34,7 +31,7 @@ struct EmployeeListView: View {
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
-         //   .padding()
+            .padding()
             }
         .background(Color.gray)
         .cornerRadius(8)
