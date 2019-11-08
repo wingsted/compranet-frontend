@@ -95,5 +95,7 @@ struct SignInView: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView(viewModel: .init())
+        .environmentObject(Keyboard())
     }
+
 }

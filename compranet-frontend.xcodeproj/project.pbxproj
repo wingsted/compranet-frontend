@@ -26,6 +26,7 @@
 		D417BC6023717F1F00A6147C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417BC5F23717F1F00A6147C /* Preview Assets.xcassets */; };
 		D417BC6323717F1F00A6147C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D417BC6123717F1F00A6147C /* LaunchScreen.storyboard */; };
 		D417BC6B23717F6800A6147C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC6A23717F6800A6147C /* SignInView.swift */; };
+		D417BC752374BFD400A6147C /* EmployeeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417BC742374BFD400A6147C /* EmployeeTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D417BC6223717F1F00A6147C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D417BC6423717F1F00A6147C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D417BC6A23717F6800A6147C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D417BC742374BFD400A6147C /* EmployeeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				739F5DBD2371AB8D00FBA111 /* Dashboard.swift */,
 				739F5DC12371ABFF00FBA111 /* EmployeeListView.swift */,
+				D417BC742374BFD400A6147C /* EmployeeTestView.swift */,
 				739F5DC32371AC0400FBA111 /* ProfileView.swift */,
 			);
 			path = Dashboard;
@@ -255,6 +258,7 @@
 				739F5DB52371A7BC00FBA111 /* RootView.swift in Sources */,
 				739F5DC02371ABF700FBA111 /* NewsFeedView.swift in Sources */,
 				739F5DAB2371A57000FBA111 /* KeyboardObservingView.swift in Sources */,
+				D417BC752374BFD400A6147C /* EmployeeTestView.swift in Sources */,
 				739F5DC42371AC0400FBA111 /* ProfileView.swift in Sources */,
 				739F5DAD2371A58500FBA111 /* Keyboard.swift in Sources */,
 			);
