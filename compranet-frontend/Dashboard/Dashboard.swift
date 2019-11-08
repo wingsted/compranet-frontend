@@ -16,7 +16,8 @@ struct Dashboard: View {
                     Image(systemName: "doc.plaintext")
                     Text("News")
                 }
-          //  EmployeeListView()
+            // FIXME: Use real data!
+            EmployeeListView(employees: .employeeStubArray)
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("Employees")

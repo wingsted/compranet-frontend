@@ -32,6 +32,10 @@ extension Employee {
 
 }
 
+extension Array where Element == Employee {
+    static let employeeStubArray: [Employee] = Array(repeating: Employee.stub, count: 10)
+}
+
 final class AppStore: ObservableObject {
 
     // MARK: - State
