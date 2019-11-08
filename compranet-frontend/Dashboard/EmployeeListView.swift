@@ -18,9 +18,7 @@ struct EmployeeListView: View {
                 VStack {
                     Text(employee.name)
                     .foregroundColor(.white)
-                    
                         .padding()
-                    
                     Text(employee.phoneNumber!)
                     .foregroundColor(.white)
                 }
