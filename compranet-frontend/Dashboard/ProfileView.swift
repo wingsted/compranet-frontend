@@ -10,44 +10,52 @@ import SwiftUI
 
 struct ProfileView: View {
 
-    @State var firstName: String = ""
-    @State var lastName: String = ""
+    @State var employee: Employee
 
     var body: some View {
-        Form {
-            Section(header: Text("Name"))
-            {
-                TextField("First name", text: $firstName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Last name", text: $lastName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+        VStack(alignment: .center) {
+            Image("harold-0")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+                .overlay(
+                    Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 10)
+                .frame(width: 150, height: 150)
+
+            VStack(alignment: .center) {
+                Text(employee.name)
+                    .font(.title)
+                    .fontWeight(.black)
+                    .multilineTextAlignment(.center)
+                Text(employee.email)
+                    .bold()
+                    .multilineTextAlignment(.center)
             }
-                .padding()
-            Section(header: Text("Details")) {
-                TextField("Phone number", text: $firstName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Department", text: $lastName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-                .padding()
-            Section {
-                Image("harold-0")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle().stroke(Color.white, lineWidth: 4))
-                    .shadow(radius: 10)
-                    .padding()
-                    .background(Color.gray)
-                    .cornerRadius(10)
-            }
+            .padding()
+
+            Text("Phone number:")
+                .underline()
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 3)
+            Text(employee.phoneNumber!)
+                .multilineTextAlignment(.center)
+                .padding(.bottom)
+
+            Text("Department ID:")
+                .underline()
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 3)
+            Text(employee.departmentID.uuidString)
+                .multilineTextAlignment(.center)
+                .padding(.bottom)
         }
+        .padding(5)
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(employee: .stub)
     }
 }

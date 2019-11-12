@@ -9,5 +9,6 @@
 import Foundation
 
 struct AppState {
-    var employee: Employee? = .stub
+    var employee: Employee?
+    var token: EmployeeToken?
 }
