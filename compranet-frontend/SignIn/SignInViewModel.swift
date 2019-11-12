@@ -11,6 +11,8 @@ import Combine
 
 final class SignInViewModel: ObservableObject {
 
+    let subject = PassthroughSubject<EmployeeTokenResponse, Never>()
+
     @Published var email: String = ""
     @Published var emailError: String?
     @Published var password: String = ""
@@ -36,7 +38,14 @@ final class SignInViewModel: ObservableObject {
             return
         }
 
-        print("Sign in here...")
+        API.shared
+            .signin(with: credentials)
+            .sink(receiveCompletion: { completion in
+                print(completion)
+            }) { response in
+                self.subject.send(response)
+            }
+            .store(in: &cancellables)
     }
 
     private func subscribePublishers() {

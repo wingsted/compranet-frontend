@@ -9,33 +9,6 @@
 import Foundation
 import Combine
 
-// FIXME: MOVE
-struct Employee: Codable, Identifiable {
-    var id: UUID?
-    var name: String
-    var phoneNumber: String?
-    var departmentID: UUID
-    var createdAt: Date?
-    var updatedAt: Date?
-}
-
-extension Employee {
-
-    static let stub: Self = .init(
-        id: .init(),
-        name: "Lars Ulrich",
-        phoneNumber: "+4512345678",
-        departmentID: .init(),
-        createdAt: .init(),
-        updatedAt: .init()
-    )
-
-}
-
-extension Array where Element == Employee {
-    static let employeeStubArray: [Employee] = Array(repeating: Employee.stub, count: 10)
-}
-
 final class AppStore: ObservableObject {
 
     // MARK: - State
@@ -45,6 +18,7 @@ final class AppStore: ObservableObject {
     // MARK: - Properties
 
     let signInViewModel = SignInViewModel()
+    private var cancellables = Set<AnyCancellable>()
 
     // MARK: - Getters
 
@@ -54,6 +28,15 @@ final class AppStore: ObservableObject {
 
     // MARK: - Lifecycle
 
-    init() {}
+    init() {
+        signInViewModel
+            .subject
+            .receive(on: RunLoop.main)
+            .sink { response in
+                self.state.employee = response.employee
+                self.state.token = response.token
+            }
+            .store(in: &cancellables)
+    }
 
 }

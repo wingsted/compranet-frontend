@@ -11,4 +11,9 @@ import Foundation
 struct Credentials: Codable {
     var email: String = ""
     var password: String = ""
+
+    func encode() -> String {
+        let creds = "\(email):\(password)"
+        return Data(creds.utf8).base64EncodedString()
+    }
 }

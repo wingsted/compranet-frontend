@@ -6,9 +6,13 @@
 //  Copyright © 2019 Thomas Wingsted. All rights reserved.
 //
 
+import Combine
 import SwiftUI
 
 struct Dashboard: View {
+
+    @EnvironmentObject var store: AppStore
+
     var body: some View {
         TabView {
             NewsFeedView(items: Array(repeating: NewsItem.stub, count: 10))
@@ -22,7 +26,7 @@ struct Dashboard: View {
                     Image(systemName: "list.dash")
                     Text("Employees")
                 }
-            ProfileView()
+            ProfileView(employee: store.state.employee!)
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Profile")
@@ -34,5 +38,6 @@ struct Dashboard: View {
 struct Dashboard_Previews: PreviewProvider {
     static var previews: some View {
         Dashboard()
+            .environmentObject(AppStore())
     }
 }
